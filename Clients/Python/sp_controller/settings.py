@@ -18,7 +18,7 @@ from sp_controller.serialcommunication import SerialCommunication
 from sp_controller.__init__ import __version__
 
 
-DEFAULT_PORT = "/dev/ttyUSB0"
+DEFAULT_PORT = "/dev/ttyUSB5"
 DEFAULT_BAUDRATE = 115200
 DEFAULT_LOGFILE = "sp_controller.log"
 DEFAULT_SERIAL_READ_SLEEPTIME = 0.1
