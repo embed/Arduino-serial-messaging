@@ -56,6 +56,7 @@ class SerialPacket
 
     void sendDataArrayRequest(uint8_t arrayID, uint8_t length);
     void sendDataArray(uint8_t *dataArray, uint8_t length);
+    void printInfo();
 
     boolean readSerialData();
     uint8_t getCommandID();
@@ -68,7 +69,7 @@ class SerialPacket
       uint8_t nodeID;
       uint8_t sensorID;
       uint8_t commandID;
-      uint8_t payload;
+      uint16_t payload;
       uint8_t parity;
     } incomingPacket, outgoingPacket;             //TODO: also use this struct to send packets? (todo underscore)
 
@@ -93,7 +94,6 @@ class SerialPacket
     void hexPrinting(int16_t& data);
     uint8_t hex_to_dec(uint8_t in);
     boolean parseSerialData();
-    void printInfo();
     boolean checkParity();
     boolean newPacket;
     boolean validatePacketFields();

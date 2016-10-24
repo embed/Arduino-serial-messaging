@@ -10,6 +10,7 @@
 
 #define COMMAND            0x01
 #define COMMAND_REPLY      0x02
+#define COMMAND_WIDE            0x03
 
 #define DATA_REQUEST       0x11
 #define DATA_BYTE          0x12
@@ -25,6 +26,15 @@
 
 #define DISTANCE    0x30
 #define MOTORSTATUS 0x50
+
+
+// Motor types
+
+#define MOTOR_ABS_TARGET 0x70
+#define MOTOR_REL_TARGET 0x77
+
+#define MOTOR_POSITION  0x80
+
 
 /// Command IDs
 
